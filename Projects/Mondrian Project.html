@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      /* transform: scale(0.8); */
+    }
+
+    .container{
+      height: 763px;
+      width: 739px;
+      display: grid;
+      grid-template-columns: 320px 351px 50px;
+      grid-template-rows: 414px 311px 20px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    #top-left{
+      grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .vertical-flex{
+      grid-area: 2/ 3/ -1/ -1;
+      display: flex;
+      background-color: #F0F1EC;
+      flex-direction: column;
+    }
+
+    .yellow-black{
+      grid-area: 3 / 2 / 4 / 3;
+      display: flex;
+      background-color: black;
+      flex-direction: row;
+      gap: 9px;
+    }
+
+    #yellow{
+      background-color: #F9D01E;
+      width: 198px;
+    }
+
+    #black{
+      background-color: #000;
+      width: 153px;
+    }
+
+    .blue-item{
+      background-color: #004592;
+      flex-basis: 130px;
+    }
+
+    .black-box{
+      background-color: #000;
+      flex-basis: 19px;
+    }
+
+    #bottom-left{
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class = "red"></div>
+    <div class = "white" id="top-left"></div>
+    <div class = "white two-one"></div>
+    <div class = "white two-two"></div>
+    <diV class = "vertical-flex">
+      <div class = "blue-item"></div>
+      <div class = "black-box"></div>
+    </diV>
+    <div class = "white" id="bottom-left"></div>
+    <div class = "yellow-black">
+      <div id = "yellow"></div>
+      <div id = "black"></div>
+    </div>
+  </div>
+</body>
+
+</html>
